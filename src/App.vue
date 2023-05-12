@@ -15,3 +15,10 @@ export default {
   }
 }
 </script>
+
+<style>
+body {
+  background-color: #778899; /* This is a gray-blue color */
+  font-family: 'Lora', serif;
+}
+</style>

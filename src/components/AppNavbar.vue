@@ -5,6 +5,7 @@
       <li><a href="#work">Work</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
+    <div class="name">Eric Oropezaelwood</div>
   </nav>
 </template>
 
@@ -16,7 +17,10 @@ export default {
 
 <style scoped>
 nav {
-  background-color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #778899;
   color: white;
   padding: 15px;
 }
@@ -24,11 +28,18 @@ nav {
 .nav-links {
   list-style: none;
   display: flex;
-  justify-content: space-around;
+  gap: 55px;
 }
 
 .nav-links a {
   color: white;
   text-decoration: none;
 }
+
+.name {
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+}
 </style>
+
