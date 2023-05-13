@@ -1,6 +1,11 @@
 <template>
   <div id="app">
     <AppNavbar/>
+    <p class="intro">
+      <span>Hey there</span> <br>
+      <span class="name">Eric Oropezaelwood</span> <br>
+      <span>Cloud + DevOps Engineer</span>
+    </p>
     <img src="/coffee-shop-minimal-anime.png" alt="coffee shop" class="side-image">
     <!-- Rest of your app goes here -->
   </div>
@@ -19,6 +24,7 @@ export default {
 
 <style>
 body {
+  margin: 0;
   background-color: #778899; /* This is a gray-blue color */
   font-family: 'Lora', serif;
 }
@@ -33,4 +39,19 @@ body {
   object-fit: cover; /* This will make sure your image maintains its aspect ratio */
   z-index: 0; /* This will ensure the image stays below other elements like the navbar */
 }
+
+.intro span {
+  color: white;
+  font-size: 1.25em;
+  font-weight: bold;
+  line-height: 2; /* Adjust as needed */
+  padding: 20px;
+}
+
+.intro .name {
+  /* color:black; */
+  font-size: 2em;
+  font-family: 'Cinzel', serif;
+}
+
 </style>
