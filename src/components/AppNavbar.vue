@@ -1,9 +1,8 @@
 <template>
   <nav>
     <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#work">Work</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="https://github.com/EricOropezaelwood" target="_blank" rel="noopener noreferrer">Projects</a></li>
+      <li><a href="https://www.linkedin.com/in/eric-oropeza-elwood/" target="_blank" rel="noopener noreferrer">Career</a></li>
     </ul>
   </nav>
 </template>
@@ -19,7 +18,7 @@ nav {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  background-color: #778899;
+  background-color: transparent;
   color: white;
   padding: 15px;
 }
