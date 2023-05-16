@@ -19,8 +19,9 @@ nav {
   justify-content: flex-end;
   align-items: center;
   background-color: transparent;
-  color: white;
+  color: azure;
   padding: 15px;
+  text-decoration: underline
 }
 
 .nav-links {
@@ -30,7 +31,7 @@ nav {
 }
 
 .nav-links a {
-  color: white;
+  color: azure;
   text-decoration: none;
 }
 

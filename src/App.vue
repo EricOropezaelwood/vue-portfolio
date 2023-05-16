@@ -3,7 +3,7 @@
     <AppNavbar/>
     <p class="intro">
       <span class="name">Eric Oropezaelwood</span> <br>
-      <span>Cloud + DevOps Engineer</span>
+      <span class="job-title">Cloud + DevOps Engineer</span>     
     </p>
   </div>
 </template>
@@ -31,11 +31,11 @@ body {
 }
 
 .intro span {
-  color: white;
+  color:azure;
   font-size: 1.25em;
   font-weight: bold;
-  line-height: 2; /* Adjust as needed */
-  padding: 20px;
+  line-height: 2;
+  padding: 8px;
 }
 
 .intro .name {
@@ -44,4 +44,7 @@ body {
   font-family: 'Cinzel', serif;
 }
 
+.intro .job-title {
+  box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.3);
+}
 </style>
