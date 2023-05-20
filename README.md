@@ -1,6 +1,6 @@
 # Eric Oropezaelwood's Portfolio Website
 
-This is the source code for Eric Oropezaelwood's personal portfolio website, a showcase of his development work. The website is built with Vue.js and hosted on AWS.
+Vue portfolio website to link to GitHub, LinkedIn or wherever else makes sense. Nothing fancy, just a website to show some work
 
 ## Prerequisites
 
