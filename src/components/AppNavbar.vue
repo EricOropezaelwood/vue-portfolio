@@ -33,6 +33,7 @@ nav {
 .nav-links a {
   color: azure;
   text-decoration: none;
+  font-family: "Cardo";
 }
 
 </style>

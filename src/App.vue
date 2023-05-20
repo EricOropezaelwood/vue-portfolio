@@ -41,7 +41,7 @@ body {
 .intro .name {
   /* color:black; */
   font-size: 2em;
-  font-family: 'Cinzel', serif;
+  font-family: 'Cardo', serif;
 }
 
 .intro .job-title {
