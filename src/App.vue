@@ -22,7 +22,7 @@ export default {
 <style>
 body {
   margin: 0;
-  background-image: url("~@/assets/city-wallpaper.jpg");
+  background-image: url("~@/assets/fuji-minimal.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -31,7 +31,7 @@ body {
 }
 
 .intro span {
-  color:azure;
+  color:darkslategray;
   font-size: 1.25em;
   font-weight: bold;
   line-height: 2;

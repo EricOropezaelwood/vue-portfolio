@@ -19,7 +19,7 @@ nav {
   justify-content: flex-end;
   align-items: center;
   background-color: transparent;
-  color: azure;
+  color: darkslategray;
   padding: 15px;
   text-decoration: underline
 }
@@ -31,7 +31,7 @@ nav {
 }
 
 .nav-links a {
-  color: azure;
+  color: darkslategray;
   text-decoration: none;
   font-family: "Cardo";
 }
