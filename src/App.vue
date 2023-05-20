@@ -2,7 +2,7 @@
   <div id="app">
     <AppNavbar/>
     <p class="intro">
-      <span class="name">Eric Oropezaelwood hey</span> <br>
+      <span class="name">Eric Oropezaelwood</span> <br>
       <span class="job-title">Cloud + DevOps Engineer</span>     
     </p>
   </div>
