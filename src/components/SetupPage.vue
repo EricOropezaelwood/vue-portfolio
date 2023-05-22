@@ -1,6 +1,6 @@
 <template>
     <div class="setup-page">
-      <h1>How this site is running currently</h1>
+      <h1>Current method used to host this site</h1>
       <img src="../assets/vue-portfolio-architecture-diagram-white.png" alt="Website Architecture">
     </div>
   </template>
