@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomePage from '@/components/HomePage.vue'
-import ImagePage from '@/components/ImagePage.vue'
+import SetupPage from '@/components/SetupPage.vue';
+
 
 const routes = [
   {
@@ -8,9 +9,11 @@ const routes = [
     component: HomePage,
   },
   {
-    path: '/image',
-    component: ImagePage,
+    path: '/setup',
+    name: 'SetupPage',
+    component: SetupPage
   }
+  
 ]
 
 const router = createRouter({

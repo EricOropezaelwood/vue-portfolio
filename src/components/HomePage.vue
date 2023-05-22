@@ -1,6 +1,5 @@
 <template>
     <div id="app">
-      <AppNavbar/>
       <div class="main-content">
         <p class="intro">
           <span class="name">Eric Oropezaelwood</span> <br>
@@ -11,13 +10,9 @@
   </template>
   
   <script>
-  import AppNavbar from './AppNavbar.vue'
   
   export default {
     name: 'HomePage',
-    components: {
-      AppNavbar
-    }
   }
   </script>
   
