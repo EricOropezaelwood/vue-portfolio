@@ -22,31 +22,17 @@ jobs:
         run: |
           npm ci
           npm run build
-
-      - name: Deploy to S3
-        uses: jakejarvis/s3-sync-action@master
-        with:
-          args: --follow-symlinks --delete
-        env:
-          AWS_S3_BUCKET: portfolio-website-eoropezaelwood
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          AWS_REGION: "us-east-2"
-          SOURCE_DIR: "dist"
-          
-      - name: AWS Cloudfront Invalidate Action
-        # You may pin to the exact commit or the version.
-        # uses: awact/cloudfront-action@8bcfabc7b4bbc0cb8e55e48527f0e3a6d681627c
-        uses: awact/cloudfront-action@0.1.2
-        with:
-          # AWS Access Key. [AWS Docs](https://docs.aws.amazon.com/general/latest/gr/managing-aws-access-keys.html)
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          # AWS Secret Access Key. [AWS Docs](https://docs.aws.amazon.com/general/latest/gr/managing-aws-access-keys.html)
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          # Region of the S3 Bucket
-          AWS_REGION: "us-east-2"
-          # ID of the Cloudfront Distribution
-          DISTRIBUTION_ID: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
-          # Path to invalidate Cloudfront distribution
-          SOURCE_PATH: "/*"
       
+      - name: S3 and CloudFront Deploy
+        # You may pin to the exact commit or the version.
+        # uses: lbertenasco/s3-deploy@d3fbc741f842c22bcc49d2cf250280866afd2014
+        uses: lbertenasco/s3-deploy@v1.2.4
+        with:
+          # Directory to deploy
+          folder: dist
+          # Name of AWS Bucket
+          bucket: portfolio-website-eoropezaelwood
+          # AWS CloudFront distribution ID
+          dist-id: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
+          # AWS CloudFront invalidation path(s)
+          invalidation: "/*"
