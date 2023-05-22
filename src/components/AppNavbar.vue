@@ -3,6 +3,7 @@
     <ul class="nav-links">
       <li><a href="https://github.com/EricOropezaelwood" target="_blank" rel="noopener noreferrer">Projects</a></li>
       <li><a href="https://www.linkedin.com/in/eric-oropeza-elwood/" target="_blank" rel="noopener noreferrer">Career</a></li>
+      <li><router-link to="/setup">Setup</router-link></li>
     </ul>
   </nav>
 </template>
@@ -21,7 +22,7 @@ nav {
   background-color: transparent;
   color: darkslategray;
   padding: 15px;
-  text-decoration: underline
+  text-decoration: underline;
 }
 
 .nav-links {
@@ -35,6 +36,4 @@ nav {
   text-decoration: none;
   font-family: "Cardo";
 }
-
 </style>
-
