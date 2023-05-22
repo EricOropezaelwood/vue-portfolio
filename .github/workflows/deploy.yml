@@ -34,8 +34,8 @@ jobs:
           AWS_REGION: "us-east-2"
           SOURCE_DIR: "dist"
 
-      - name: Refresh CloudFront distribution
-        uses: aws-actions/aws-cloudfront-invalidate-action@v1
+      - name: Invalidate AWS CloudFront
+        uses: chetan/invalidate-cloudfront-action@v2
         with:
           distribution: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
           paths: "/*"
