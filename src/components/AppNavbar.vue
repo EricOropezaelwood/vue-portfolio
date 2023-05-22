@@ -4,6 +4,11 @@
       <li><a href="https://github.com/EricOropezaelwood" target="_blank" rel="noopener noreferrer">Projects</a></li>
       <li><a href="https://www.linkedin.com/in/eric-oropeza-elwood/" target="_blank" rel="noopener noreferrer">Career</a></li>
       <li><router-link to="/setup">Setup</router-link></li>
+      <li>
+        <router-link to="/">
+          <font-awesome-icon :icon="['fas', 'home']" />
+        </router-link>
+      </li>
     </ul>
   </nav>
 </template>
